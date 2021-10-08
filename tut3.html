@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card hover</title>
+    <link rel="stylesheet" href="tut3.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+           <a href="/"> AddtoCart</a>
+        </div>
+        <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-Right">
+            <input type="search" name="search" id="search" placeholder="here your cart!">
+            <input type="submit" href="/" value="search" class="btn">
+        </div>
+    </nav>
+    <div class="heading">    <h1>Never Deal with YOU!</h1>
+    </div>
+
+<div class="section">
+  
+   
+
+    <div class="container">
+        <div class="box">
+            <img src="img1.png" alt="img">
+        </div>
+        <div class="box">
+            <img src="img2.png" alt="img">
+        </div>
+    </div>
+</div>
+<section>
+    <h2>My Journal Store is$</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sunt quos minus explicabo, voluptas deserunt a delectus voluptatum natus ipsum, repellat cumque soluta unde incidunt suscipit reprehenderit illum at corporis? Voluptas ut architecto laboriosam quaerat quo explicabo in nesciunt nulla neque. Delectus, magni? Quos quidem unde ipsa vitae consectetur neque voluptatibus quas sunt cumque incidunt in, recusandae fugiat voluptatum. Aspernatur libero neque est asperiores? Repellendus, minima at! Facere provident nemo explicabo inventore recusandae voluptatibus! Debitis sed ducimus nam tempora accusamus eligendi? Officia ab ex rem tempora inventore provident beatae quod nihil earum quasi aspernatur tenetur praesentium ipsum consequuntur molestiae, vitae, explicabo blanditiis illum veritatis enim dolorum quas ratione! Aliquid corrupti iste fuga commodi magnam at impedit minima ad soluta vero aspernatur tenetur 
+        doloribus quisquam quis non, quaerat </p>
+        <div id="progressbar"></div>
+<div id="scrollpath"></div>
+    <p>voluptatem incidunt nesciunt distinctio neque molestias repellendus. Fugit ipsa neque consequuntur numquam maxime atque ea quasi consequatur. Obcaecati, voluptates ducimus. Quibusdam maiores impedit adipisci modi, nihil excepturi ipsum quasi numquam aliquid. Maxime labore eum harum adipisci, quos iste libero at, sit laboriosam quibusdam nemo. Atque minus repellat, molestias quae consequuntur dicta deleniti pariatur ex minima voluptates dolorum sunt ab sed doloribus provident fuga commodi, alias facere voluptate eveniet necessitatibus? Quis rem ab doloribus sunt similique sit nihil voluptate quibusdam maxime non tempore dolorum eius, alias optio recusandae mollitia provident obcaecati, voluptatum, culpa ratione totam consequatur excepturi. Tempore sunt neque repellat! Explicabo ratione, quis quo libero hic beatae delectus tenetur perferendis? Ipsam nisi facilis assumenda aut reiciendis, obcaecati molestiae dolore. Error hic, omnis inventore unde soluta nihil quo dolorum. Tenetur, quas possimus minima consectetur a repellat totam illum maiores cupiditate. Eos possimus nisi odio nulla rem sint dolore? Veritatis ipsum nobis, atque laudantium excepturi ullam alias corporis optio modi? Cum, aperiam. Vero distinctio excepturi tempore eaque ad incidunt facilis recusandae id, saepe earum consequatur commodi animi doloribus culpa iure blanditiis! Deleniti, cum amet ipsam deserunt quae nihil quibusdam doloremque quis nulla ad veniam iusto. Ad nesciunt, aperiam aliquam quas perferendis numquam rem tempora esse omnis minus molestias optio magnam, voluptates animi. Minus perferendis soluta dicta mollitia saepe hic temporibus, voluptatum, neque, quis facere recusandae reprehenderit rem? A adipisci alias distinctio, impedit, veritatis aut ipsum tempora cupiditate, reiciendis itaque rem aliquam dolore sit fugiat sequi corrupti! Modi molestias unde officia? Ea ducimus maxime voluptates. Similique corporis veritatis, asperiores in, accusantium vitae sequi inventore praesentium nulla laboriosam, quam laudantium id. Blanditiis vero obcaecati voluptates, quas labore iusto at, enim quaerat quod recusandae odit voluptate totam reiciendis quo provident beatae a est cumque illum natus tenetur ex non sint nobis. Ex temporibus maxime provident explicabo consequatur, voluptatem ea deserunt possimus odit exercitationem voluptates aliquid ratione nulla quidem sit corporis doloremque totam natus dicta esse ad. Quibusdam, accusamus! Accusantium porro expedita nobis, exercitationem cupiditate nam dolores eveniet officia cumque ex perspiciatis fuga laborum doloremque? Eius officiis officia cumque suscipit similique optio dolores rem explicabo aliquid incidunt? Laboriosam error quae soluta. Nemo aut quam debitis pariatur officiis incidunt aliquam, est, sapiente dolor quisquam totam non beatae consequuntur adipisci ipsum?</p>
+</section>
+
+</body>
+<script>
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function () {
+        let progressHeight = (window.pageYOffset /totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+</script>
+
+</html>

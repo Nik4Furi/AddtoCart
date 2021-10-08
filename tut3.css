@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    overflow: hidden;
+} */
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:   #262626;
+}
+.heading{
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+    
+
+.navbar{
+    background-color: black;
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.logo{
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding: 2%;
+    margin: 0 12px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+.logo a:hover{
+    color: salmon;
+}
+.nav-list{
+    width: 50%;
+    /* background-color: salmon; */
+    display: flex;
+}
+.nav-list li{
+    list-style: none;
+    padding: 12px;
+}
+.nav-list li a{
+    text-decoration: none;
+    margin:  0 12px;
+    font-size: 1.4rem;
+    color: white;
+
+}
+.nav-list li a:hover{
+    color: salmon;
+    text-decoration: underline;
+    text-shadow: 0 12px 12px salmon;
+}
+.nav-Right{
+    width: 50%;
+    /* background-color: seagreen; */
+    text-align:right ;
+}
+#search{
+    padding: 2px 4px;
+    font-size: 1.4rem;
+    margin: 0 8px ;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 15px;
+}
+.btn{
+    padding: 2px;
+    font-size: 1.2rem;
+    margin: 0 5px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#search:hover,.btn:hover{
+    color: salmon;
+}
+.container{
+    display: flex;
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,transparent,#0004);
+   
+    
+   
+
+}
+.container .box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    background: #444;
+    margin: 0 20px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #2da2ff 25%, #444 25%,#444 50%,#2da2ff 50%,#2da2ff 75%, #444 75%,#444 100%);
+    background-size: 40px 40px;
+    filter: grayscale(1);
+    animation: animate 0.5s linear infinite;
+    animation-play-state: paused;
+    transition: filter 1s;
+    display: flex;
+    justify-content: center;
+
+}
+.container .box:hover{
+    animation-play-state: running;
+    filter: grayscale(0);
+
+     
+}
+.box img{
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    transition: height 0.5s;
+}
+.box:hover img{
+    height: 480px;
+    /* overflow: hidden; */
+}
+@keyframes animate {
+    0%{
+        background-position: 0 ;
+    }
+    100%{
+        background-position: 40px ;
+    }
+}
+.container .box:nth-child(2) {
+    background: linear-gradient(135deg, #ff61ae 25%, #444 25%,#444 50%,#ff61ae 50%,#ff61ae 75%, #444 75%,#444 100%);
+    background-size: 40px 40px;
+
+}
+section{
+    padding: 50px;
+    background-color: black;
+
+}
+h2{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+p{
+    color: white;
+    font-size: 1.5rem;
+}
+::-webkit-scrollbar{
+    width: 0;
+  }
+
+#scrollpath{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10px;
+    background: rgba(255,255,255,0.05);
+}  
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* height: 100%; */
+    width: 10px;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    animation: animate 0.5s linear infinite   ;
+
+
+}
+
+#progressbar::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(10px);
+
+}
+#progressbar::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
+
+}
+@keyframes animate {
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
